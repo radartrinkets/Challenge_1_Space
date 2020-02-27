@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400&display=swap');
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+main{
+	background-color: #212121;
+	color: white;
+	display: grid;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	grid-template-areas:"header header"
+						"rocketAnimation rocketAnimation"
+						"atmosfeer atmosfeer"
+						"speed speed"
+						"gravity gforce"
+						"footer footer";
+	grid-template-columns: 1fr 1fr;
+
+}
+
+header{
+	grid-area: header;
+	margin-bottom: 20px;
+}
+
+
+.logo{
+	max-width: 150px;
+	padding: 10px;
+}
+
+.profilepic{
+	position: absolute;
+	max-width: 50px;
+	right: 0px;
+}
+
+.rocketAnimation{
+	background-color: #212121;
+	box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+	height: 200px;
+	grid-area: rocketAnimation;
+	margin-bottom: 20px;
+}
+
+
+.atmosfeer{
+	grid-area: atmosfeer;
+	height: 200px;
+	margin-bottom: 20px;
+}
+
+canvas{
+	max-width: 390px;
+}
+
+.speed{
+	grid-area: speed;
+	height: 200px;
+	margin-bottom: 20px;
+}
+
+.gravity{
+	grid-area: gravity;
+	height: 200px;
+	margin-bottom: 20px;
+	max-width: 195px;
+}
+
+.gforce{
+	grid-area: gforce;
+	height: 200px;
+	margin-bottom: 20px;
+	max-width: 195px;
+}
+
+footer{
+	grid-area: footer;
+	height: 200px;
+}
+

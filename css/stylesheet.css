@@ -14,8 +14,8 @@ main{
 	font-weight: 300;
 	grid-template-areas:"header header"
 						"rocketAnimation rocketAnimation"
-						"atmosfeer atmosfeer"
 						"speed speed"
+						"atmosfeer atmosfeer"
 						"gravity gforce"
 						"footer footer";
 	grid-template-columns: 1fr 1fr;
@@ -25,6 +25,8 @@ main{
 header{
 	grid-area: header;
 	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
 }
 
 
@@ -35,23 +37,38 @@ header{
 
 .profilepic{
 	position: absolute;
-	max-width: 50px;
+	max-width: 40px;
 	right: 0px;
+	margin: 10px;
+	vertical-align: middle;
 }
 
 .rocketAnimation{
-	background-color: #212121;
-	box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+	border-radius: 3px;
+background: #212121;
+box-shadow:  20px 20px 60px #101010, 
+             -20px -20px 60px #323232;
 	height: 200px;
 	grid-area: rocketAnimation;
-	margin-bottom: 20px;
+	margin: 20px;
+	max-width: 400px;
 }
 
 
 .atmosfeer{
+	border-radius: 3px;
+background: #212121;
+box-shadow:  20px 20px 60px #101010, 
+             -20px -20px 60px #323232;
 	grid-area: atmosfeer;
 	height: 200px;
 	margin-bottom: 20px;
+}
+
+#atmosfeer{
+	max-width: 374px;
+	margin-left: 20px;
+	max-height: 175px;
 }
 
 canvas{
@@ -59,19 +76,37 @@ canvas{
 }
 
 .speed{
+	border-radius: 3px;
+background: #212121;
+box-shadow:  20px 20px 60px #101010, 
+             -20px -20px 60px #323232;
 	grid-area: speed;
 	height: 200px;
 	margin-bottom: 20px;
 }
 
+#speed{
+	max-width: 374px;
+	margin-left: 20px;
+}
+
 .gravity{
+	border-radius: 3px;
+background: #212121;
+box-shadow:  20px 20px 60px #101010, 
+             -20px -20px 60px #323232;
 	grid-area: gravity;
 	height: 200px;
 	margin-bottom: 20px;
 	max-width: 195px;
+
 }
 
 .gforce{
+	border-radius: 3px;
+background: #212121;
+box-shadow:  20px 20px 60px #101010, 
+             -20px -20px 60px #323232;
 	grid-area: gforce;
 	height: 200px;
 	margin-bottom: 20px;
@@ -79,6 +114,10 @@ canvas{
 }
 
 footer{
+	border-radius: 3px;
+background: #212121;
+box-shadow:  20px 20px 60px #101010, 
+             -20px -20px 60px #323232;
 	grid-area: footer;
 	height: 200px;
 }

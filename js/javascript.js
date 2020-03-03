@@ -41,7 +41,7 @@ google.charts.load('current', {'packages':['corechart']});
 
         var options = {
           
-          
+
           pieHole: 0.4,
           backgroundColor: '#212121',
         };
@@ -80,3 +80,15 @@ google.charts.load('current', {'packages':['corechart']});
         }, 13000);
         
       }
+
+      window.odometerOptions = {
+        format: '(ddd).ddd',
+        duration: 3000,
+        animation: 'count'
+      };
+
+      setTimeout(function(){
+        odometer.innerHTML = 0.700;
+      }, 3000);
+
+     

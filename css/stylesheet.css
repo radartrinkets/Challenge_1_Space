@@ -16,8 +16,7 @@ main{
 						"rocketAnimation rocketAnimation"
 						"speed speed"
 						"atmosfeer atmosfeer"
-						"gravity gforce"
-						"footer footer";
+						"gravity gforce";
 	grid-template-columns: 1fr 1fr;
 
 }
@@ -50,15 +49,14 @@ h1{
 .rocketAnimation{
 	border-radius: 3px;
 background: #212121;
-box-shadow:  20px 20px 60px #101010, 
-             -20px -20px 60px #323232;
+box-shadow:  -5px 5px 10px #0d0d0d, 
+             5px -5px 10px #353535;
 	height: 200px;
 	grid-area: rocketAnimation;
 	margin: 20px;
-	max-width: 400px;
-	border-width: 1px;
-	border-color: white;
-	border: solid;
+	width: 374px;
+	align-items: center;
+	
 
 }
 
@@ -70,92 +68,98 @@ canvas{
 }
 
 .speed{
+
 	border-radius: 3px;
 background: #212121;
-box-shadow:  20px 20px 60px #101010, 
-             -20px -20px 60px #323232;
+box-shadow:  -5px 5px 10px #0d0d0d, 
+             5px -5px 10px #353535;
 	grid-area: speed;
 	height: 200px;
 	margin-bottom: 20px;
-	border-width: 1px;
-	border-color: white;
-	border: solid;
 	margin-left: 20px;
 	margin-right: 20px;
+	
 
 }
 
 #speed{
-	max-width: 374px;
-	margin-left: 20px;
+	width: 374px;
+	margin: auto;
 	height: 150px;
-}
+	
+	}
 
 .atmosfeer{
 	border-radius: 3px;
 background: #212121;
-box-shadow:  20px 20px 60px #101010, 
-             -20px -20px 60px #323232;
+box-shadow:  -5px 5px 10px #0d0d0d, 
+             5px -5px 10px #353535;
 	grid-area: atmosfeer;
 	height: 200px;
 	margin-bottom: 20px;
-	border-width: 1px;
-	border-color: white;
-	border: solid;
+	
 	margin-left: 20px;
 	margin-right: 20px;
 }
 
 #atmosfeer{
-	max-width: 374px;
-	margin-left: 20px;
+	width: 374px;
+	
 	height: 150px;
+	margin: auto;
 }
 
 .gravity{
 	border-radius: 3px;
 background: #212121;
-box-shadow:  20px 20px 60px #101010, 
-             -20px -20px 60px #323232;
+box-shadow:  -5px 5px 10px #0d0d0d, 
+             5px -5px 10px #353535;
 	grid-area: gravity;
 	height: 200px;
 	margin-bottom: 20px;
 	width: 177px;
-	border-width: 1px;
-	border-color: white;
-	border: solid;
+	
 	margin-left: 20px;
 	
 
 
 }
 
+#gravity{
+	width: 150px;
+	margin: auto;
+}
+
 .gforce{
 	border-radius: 3px;
 background: #212121;
-box-shadow:  20px 20px 60px #101010, 
-             -20px -20px 60px #323232;
+box-shadow:  -5px 5px 10px #0d0d0d, 
+             5px -5px 10px #353535;
 	grid-area: gforce;
 	height: 200px;
 	margin-bottom: 20px;
 	width: 177px;
-	border-width: 1px;
-	border-color: white;
-	border: solid;
+	
 	margin-left: 20px;
 	margin-right: 20px;
 
 }
 
-.odometer{
-	font-size: 20px;
+
+
+.temp{
+	font-size: 4em;
+	text-align: center;
+	margin-top: 20px;
 }
+
+
 
 footer{
 	border-radius: 3px;
 background: #212121;
-box-shadow:  20px 20px 60px #101010, 
-             -20px -20px 60px #323232;
+box-shadow:  -5px 5px 10px #0d0d0d, 
+             5px -5px 10px #353535;
 	grid-area: footer;
 	height: 200px;
 	border-width: 1px;
@@ -163,3 +167,116 @@ box-shadow:  20px 20px 60px #101010,
 	border: solid;
 }
 
+@media only screen and (min-width: 1024px) {
+	/* For tablet: */
+
+	main{
+	grid-template-areas:"header header header"
+						"rocketAnimation rocketAnimation rocketAnimation"
+						"speed speed gravity"
+						"gforce atmosfeer atmosfeer";
+	grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.rocketAnimation{
+		width: 980px;
+		height: 350px;
+	}
+
+	.speed{
+		height:350px;
+
+	}
+	#speed{
+		width: 600px;
+		height: 300px;
+	}
+
+	.gravity{
+		height:350px;
+		width: auto;
+		margin-right: 20px;
+		
+	}
+
+	#gravity{
+		height: 200px;
+		margin-top: 40px;
+
+	}
+
+	.gforce{
+		height:350px;
+		width: auto;
+
+		
+	}
+
+	.temp{
+	font-size: 6em;
+	
+	margin-top: 40px;
+}
+
+	.atmosfeer{
+		height:350px;
+	}
+
+	#atmosfeer{
+		width: 600px;
+		height: 300px;
+
+	}
+
+	.footer{
+		height:350px;
+	}
+
+}
+
+@media only screen and (min-width: 1342px) {
+	/* For desktop small: */
+
+	main{
+	grid-template-areas:"header header header header"
+						"rocketAnimation rocketAnimation rocketAnimation rocketAnimation"
+						"speed speed speed speed"
+						"atmosfeer atmosfeer gravity gforce";
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	.rocketAnimation{
+		width: 1302px;
+	}
+
+	#speed{
+		width: 1020px;
+		height: 275px;
+	}
+
+	#atmosfeer{
+		width: 470px;
+		height: 275px;
+	}
+
+}
+
+@media only screen and (min-width: 1500px){
+	/* For desktop groot: */
+
+	*{
+		background-color: #212121;
+	}
+
+	main{
+		margin-right: 200px;
+		margin-left: 200px;
+	}
+
+	.rocketAnimation{
+		width: 1060px;
+	}
+
+	
+	
+}

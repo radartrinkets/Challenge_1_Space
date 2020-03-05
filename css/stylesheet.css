@@ -60,6 +60,31 @@ box-shadow:  -5px 5px 10px #0d0d0d,
 
 }
 
+.imagesanimation{
+	display: grid;
+	grid-template-areas: "spaceship . . mars";
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin-top: 70px;
+
+}
+
+.spaceship{
+	height: 25px;
+	grid-area: spaceship;
+	position: relative;
+	animation: MoveToPlanet 5s infinite;
+}
+
+@keyframes MoveToPlanet{
+	from {left: 25px;}
+	to {left: 200px;}
+}
+
+.marsimg{
+	height: 50px;
+	grid-area: mars;
+
+}
 
 
 
@@ -183,6 +208,29 @@ box-shadow:  -5px 5px 10px #0d0d0d,
 		height: 350px;
 	}
 
+	.imagesanimation{
+		margin-top: 150px;
+	}
+
+	.spaceship{
+	height: 50px;
+	grid-area: spaceship;
+	position: relative;
+	animation: MoveToPlanet 5s infinite;
+}
+
+	@keyframes MoveToPlanet{
+		from {left: 25px;}
+		to {left: 550px;}
+	}
+
+	.marsimg{
+		height: 125px;
+		grid-area: mars;
+
+	}
+
+
 	.speed{
 		height:350px;
 
@@ -249,6 +297,11 @@ box-shadow:  -5px 5px 10px #0d0d0d,
 		width: 1302px;
 	}
 
+	@keyframes MoveToPlanet{
+		from {left: 25px;}
+		to {left: 750px;}
+	}
+
 	#speed{
 		width: 1020px;
 		height: 275px;
@@ -275,6 +328,11 @@ box-shadow:  -5px 5px 10px #0d0d0d,
 
 	.rocketAnimation{
 		width: 1060px;
+	}
+
+	@keyframes MoveToPlanet{
+		from {left: 25px;}
+		to {left: 650px;}
 	}
 
 	
